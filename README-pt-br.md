@@ -1,6 +1,6 @@
 #Introdução
 
-O objetivo deste guia é aprensetar um conjunto de boas práticas e diretrizes para uma aplicação AngularJS. Estas boas práticas foram colhetadas de:
+O objetivo deste guia é apresentar um conjunto de boas práticas e diretrizes para uma aplicação AngularJS. Estas boas práticas foram colhetadas de:
 
 0. Código Fonte AngularJS
 0. Códigos fonte de artigos que li
