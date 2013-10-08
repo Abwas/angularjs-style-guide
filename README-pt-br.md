@@ -1,8 +1,8 @@
 #Introdução
 
-O objetivo deste guia é apresentar um conjunto de boas práticas e diretrizes para uma aplicação AngularJS. Estas boas práticas foram colhetadas de:
+O objetivo deste guia é apresentar um conjunto de boas práticas e diretrizes para uma aplicação AngularJS. Estas boas práticas foram coletadas de:
 
-0. Código Fonte AngularJS
+0. Código fonte AngularJS
 0. Códigos fonte de artigos que li
 0. Minha própria experiência
 
@@ -113,7 +113,7 @@ Aqui está seu modelo:
     * test
     * lib
 
-* Quando criarmos uma diretiva, pode ser útil colocar todos os arquivos associados as diretivas (i.e. templates, arquivos CSS/SASS, JavaScript) em uma pasta única. Se você escolher usar este estilo, seja consistente e use-o em todo seu projeto.
+* Quando criarmos uma diretiva, pode ser útil colocarmos todos os arquivos associados as diretivas (i.e. templates, arquivos CSS/SASS, JavaScript) em uma pasta única. Se você escolher usar este estilo, seja consistente e use-o em todo seu projeto.
 
     * app
         * directives
@@ -156,7 +156,7 @@ Isto fará seus testes mais fáceis e em certos casos irá prevenir comportament
     * [Grunt](http://gruntjs.com)
     * [Bower](http://bower.io)
 
-* Use promises (`$q`) ao invés de callbacks. Isso tornará seu código mais elegante e limp, e o salvará do inferno de callbacks.
+* Use promises (`$q`) ao invés de callbacks. Isso tornará seu código mais elegante e limpo, e o salvará do inferno de callbacks.
 * Use `$resource` ao invés de `$http` quando possível. Um alto nível de abstração irá lhe salvar de redundância.
 * Use um pré-minificador AngularJS (como [ngmin](https://github.com/btford/ngmin) ou [ng-annotate](https://github.com/olov/ng-annotate)) para prevenir problemas depois da minificação.
 * Não use globais. Resolva todas as dependências usando a Injeção de Dependências.
@@ -174,7 +174,7 @@ Atualmente não há uma grande diferença, mas a primeira forma parece mais limp
 #Controladores
 
 * Não manipule DOM com controladores. Use diretivas para isso.
-* O nome do controlodor é dado pela sua funcionalidade (por exemplo *shopping cart*, *homepage*, *admin panel*) e o adicional `Ctrl` no final. Os controladores são nomeados no formato UpperCamelCase (`HomePageCtrl`, `ShoppingCartCtrl`, `AdminPanelCtrl`, etc.).
+* O nome do controlador é dado pela sua funcionalidade (por exemplo *shopping cart*, *homepage*, *admin panel*) e o adicional `Ctrl` no final. Os controladores são nomeados no formato UpperCamelCase (`HomePageCtrl`, `ShoppingCartCtrl`, `AdminPanelCtrl`, etc.).
 * Os controladores não devem ser definidos como globais (não importa que AngularJS permita isso, é uma má pratica pois polui o namespace).
 * Use a sintaxe de array para as definições do controlador:
 
@@ -225,7 +225,7 @@ Isso é especialmente aplicado a um arquivo que contenha muito código que se fa
 #Diretivas
 
 * Nomeie suas diretivas no padrão lowerCamelCase
-* Use `scope` ao invés de `$scope` na sua função de link. Na compilação, pós/pre funções link que você tenha, definem os argumentos que irão ser passados quando a função é invocada, você não será capaz de muda-los usando DI (injeção de dependências). Este modelo também é usado no código fonte do AngularJS.
+* Use `scope` ao invés de `$scope` na sua função de link. Na compilação, pós/pre funções link que você tenha, definem os argumentos que irão ser passados quando a função é invocada, você não será capaz de mudá-los usando DI (injeção de dependências). Este modelo também é usado no código fonte do AngularJS.
 * Use prefixos customizados para suas diretivas para previnir colisões de nomes com bibliotecas de terceiros.
 * Não use `ng` ou `ui` prefixos pois eles estão reservados para o uso do AngularJS e AngularJS UI.
 * Manipulações DOM devem ser feitas somente através de diretivas.
