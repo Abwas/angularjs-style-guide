@@ -156,7 +156,7 @@ Isto fará seus testes mais fáceis e em certos casos irá prevenir comportament
     * [Grunt](http://gruntjs.com)
     * [Bower](http://bower.io)
 
-* Use promises (`$q`) ao invés de callbacks. Isso tornará seu código mais elegante e limp, e o salvará do inferno de callbacks.
+* Use promises (`$q`) ao invés de callbacks. Isso tornará seu código mais elegante e limpo, e o salvará do inferno de callbacks.
 * Use `$resource` ao invés de `$http` quando possível. Um alto nível de abstração irá lhe salvar de redundância.
 * Use um pré-minificador AngularJS (como [ngmin](https://github.com/btford/ngmin) ou [ng-annotate](https://github.com/olov/ng-annotate)) para prevenir problemas depois da minificação.
 * Não use globais. Resolva todas as dependências usando a Injeção de Dependências.
