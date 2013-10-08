@@ -1,10 +1,7 @@
 #Introdução
 
-<<<<<<< HEAD
+
 O objetivo deste guia é apresentar um conjunto de boas práticas e diretrizes para uma aplicação AngularJS. Estas boas práticas foram coletadas de:
-=======
-O objetivo deste guia é apresentar um conjunto de boas práticas e diretrizes para uma aplicação AngularJS. Estas boas práticas foram colhetadas de:
->>>>>>> e4f2eeb9e8b0ccf48ac1eb0a1bb4d4f0123439fb
 
 0. Código fonte AngularJS
 0. Códigos fonte de artigos que li
